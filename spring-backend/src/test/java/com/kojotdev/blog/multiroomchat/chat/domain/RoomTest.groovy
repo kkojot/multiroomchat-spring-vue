@@ -1,6 +1,5 @@
 package com.kojotdev.blog.multiroomchat.chat.domain
 
-
 import com.kojotdev.blog.multiroomchat.user.User
 import spock.lang.Specification
 
@@ -48,7 +47,6 @@ class RoomTest extends Specification {
         unsubscribedRoom.users.isEmpty();
     }
 
-
     def "mapping to SimpleRoomDto should be correct"() {
         given: "create new room"
         def newRoom = new Room("good name");
@@ -58,6 +56,4 @@ class RoomTest extends Specification {
         dto.key == "good-name"
         dto.name == "good name"
     }
-
-
 }

@@ -23,5 +23,4 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
                         "chrome-extension://ggnhohnkfcpcanfekomdkjffnfcjnjam")
                 .withSockJS();
     }
-
 }
