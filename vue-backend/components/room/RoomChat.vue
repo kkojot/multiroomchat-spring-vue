@@ -2,7 +2,10 @@
   <v-container fluid>
     <div class="parent">
       <div class="users">
-        <v-navigation-drawer v-bind:class="[userList ? 'showUserList' : 'hideUserList']">
+        <v-navigation-drawer
+          v-bind:class="[userList ? 'showUserList' : 'hideUserList']"
+          mobile-break-point="300"
+        >
           <v-list
             dense
             nav

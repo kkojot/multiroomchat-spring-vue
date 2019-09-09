@@ -8,7 +8,6 @@ import com.kojotdev.blog.multiroomchat.chat.dto.UserRoomKeyDto;
 import com.kojotdev.blog.multiroomchat.user.User;
 import io.vavr.collection.List;
 import io.vavr.control.Either;
-import io.vavr.control.Option;
 import org.springframework.stereotype.Service;
 
 @Service

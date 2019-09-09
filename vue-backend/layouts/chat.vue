@@ -3,6 +3,7 @@
     <v-navigation-drawer
       :value="sidebar"
       app
+      mobile-break-point="600"
     >
       <new-room></new-room>
       <v-divider></v-divider>

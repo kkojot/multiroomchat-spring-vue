@@ -7,16 +7,16 @@ import spock.lang.Specification
 class RoomTest extends Specification {
 
     def "new room should not have any user subscribed"() {
-        given: "create new room"
+        given: "created new room"
         def newRoom = new Room("good name");
         expect: "user list should be empty"
         newRoom.users.isEmpty();
     }
 
     def "created new room should have a correct key"() {
-        when: "creating new room with random name"
+        when: "creating a new room with random name"
         def newRoom = new Room(roomName);
-        then: "right key should be generated"
+        then: "the right key should be generated"
         newRoom.key == expectedKey;
         where:
         roomName                         | expectedKey
@@ -28,7 +28,7 @@ class RoomTest extends Specification {
     }
 
     def "room subscribe should be fine"() {
-        given: "empty room and user"
+        given: "an empty room and user"
         def newRoom = new Room("good name");
         def user = new User("kojot");
         when: "user subscribe"
@@ -39,7 +39,7 @@ class RoomTest extends Specification {
     }
 
     def "room unsubscribe should be fine"() {
-        given: "room with user"
+        given: "a room with user"
         def user = new User("kojot");
         def newRoom = new Room("good name").subscribe(user)
         when: "user unsubscribe"
